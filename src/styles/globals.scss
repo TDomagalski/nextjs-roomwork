@@ -1,13 +1,53 @@
+@import 'variables';
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.25;
+  letter-spacing: 1.25px;
+	font-weight: 400;
+
+	color: $color-font-fullDark;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+#root {
+	min-height: 100vh;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+
+	min-width: 320px;
+  width: 100%;
+  background-color: $color-bg-white;
+}
+
+.container {
+  width: 100%;
+  max-width: 2500px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
 }
 
 a {

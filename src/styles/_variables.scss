@@ -1,0 +1,43 @@
+// Background colors
+$color-bg-fullWhite: #fff;
+$color-bg-white: #f3ebf6;
+$color-bg-dark: #242424;
+$color-bg-fullDark: #000;
+$color-bg-green: #228B22;
+$color-bg-red: #D2001A;
+
+// Fonts colors
+$color-font-fullWhite: #fff;
+$color-font-white: #f3ebf6;
+$color-font-fullDark: #000;
+$color-font-dark: #242424;
+$color-font-green: #228B22;
+
+// ~~ svg icons
+$color-svg-googleMap: #0040ff;
+
+// Border colors
+$color-border-dark: #000;
+$color-border-white: #fff;
+
+// Harbor colors
+$color-harbor-grenade: #354649;
+$color-harbor-darkBlue: #6C7A89;
+$color-harbor-sky: #A3C6C4;
+$color-harbor-light: #E0E7E9;
+
+// MIXINS
+@mixin btn_small {
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 700;
+  color: $color-font-white;
+  border: 1px solid $color-border-white;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+@mixin btn_small-long {
+  @include btn_small;
+  padding: 1rem 2rem;
+}

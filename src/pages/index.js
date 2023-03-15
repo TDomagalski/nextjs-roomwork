@@ -17,8 +17,18 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main>
-				<h1>Home Page</h1>
+			<main className={styles.main}>
+				<div className={styles.page_default}>
+					<h1>RoomWork</h1>
+					<h5>Go work and relax in RoomWork</h5>
+					<p>
+						Niezmiernie nam miło przywitać Państwa na naszej stronie
+						internetowej. Mamy do zaoferowania kwatery pracownicze do wynajęcia.
+					</p>
+					<p style={{ textAlign: "center" }}>
+						Życzymy miłego przeglądania i zapraszamy do kontaktu.
+					</p>
+				</div>
 			</main>
 		</>
 	);

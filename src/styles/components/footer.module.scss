@@ -1,0 +1,197 @@
+@import '../variables';
+
+.page_link_phoneEmail {
+  flex-basis: 100%;
+  margin: 2rem 0;
+  .phone, .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    img {
+      margin-right: 10px;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.Contact_info {
+  margin-bottom: 3rem;
+
+  p {
+    margin: 0;
+    margin-top: 5px;
+    &.info_company, &.info_nip, &.info_regon {
+      font-weight: 700;
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin: 2rem 0;
+  }
+}
+
+.footer_bar {
+  background-color: $color-harbor-grenade;
+  border-top: 1px solid $color-border-white;
+  color: $color-font-white;
+
+  .container {
+    margin: 2rem auto;
+
+    .footer_company {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      .footer_logo {
+        flex-basis: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .Contact_info {
+        margin-bottom: 0;
+        flex-basis: 100%;
+
+        p {
+          margin-bottom: 5px;
+        }
+      }
+
+      .footer_map {
+        flex-basis: 50%;
+        margin: auto;
+        a {
+          text-decoration: none;
+          color: $color-font-white;
+          text-align: center;
+          width: auto;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid $color-border-white;
+          border-radius: 1rem;
+          box-shadow: -7px 7px 0px 0px $color-bg-fullWhite;
+          padding: 1rem;
+          
+          span {
+            font-weight: 700;
+            &.subtitle {
+              font-size: 0.6rem;
+              font-weight: 400;
+            }          
+          }
+        }
+      }
+    }
+  }
+
+  .footer_desine {
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    border-top: 1px solid $color-border-white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 920px) {
+  .footer_bar {
+    .container {
+      margin: 2rem auto;
+
+      .footer_company {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+
+        .footer_logo {
+          flex-basis: 100%;
+          font-size: 3rem;
+          svg {
+            width: 50%;
+          }
+        }
+
+        .footer_info {
+          flex-basis: auto;
+          font-size: 1.2rem;
+          flex-basis: 40%;
+          margin: 0;
+
+          .footer_info_details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            span {
+              flex-basis: 100%;
+              margin: 3px 0;
+            }
+          }
+        }
+
+        .Contact_info, .page_link_phoneEmail, .footer_map {
+          flex-basis: 30%;
+        }
+
+        .Contact_info {
+          .info_company, .info_nip, .info_regon {
+            font-size: 1.2rem;
+          }
+        }
+
+        .page_link_phoneEmail {
+          font-size: 1.5rem;
+        }
+
+        .footer_map {
+          flex-grow: 0;
+          margin: 0;
+          a {
+            width: 40%;
+            margin: auto;
+            transition: 0.25s ease;
+            &:hover {
+              box-shadow: -5px 5px 0px 0px $color-harbor-sky;
+            }
+            span {
+              font-size: 1.5rem;
+              &.subtitle {
+                font-size: 0.8rem;
+              }          
+            }
+          }
+        }
+      }
+    }
+
+    .footer_desine {
+      padding: 5px 0;
+      width: 100%;
+      text-align: center;
+      font-size: 10px;
+      border-top: 1px solid $color-border-white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

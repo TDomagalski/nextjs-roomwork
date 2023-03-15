@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "@/styles/components/Infobar.module.scss";
+import styles from "@/styles/components/infobar.module.scss";
 
 const Infobar = () => {
 	return (

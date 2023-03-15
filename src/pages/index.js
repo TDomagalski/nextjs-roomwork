@@ -22,8 +22,8 @@ export default function Home() {
 					<h1>RoomWork</h1>
 					<h5>Go work and relax in RoomWork</h5>
 					<p>
-						Niezmiernie nam miło przywitać Państwa na naszej stronie
-						internetowej. Mamy do zaoferowania kwatery pracownicze do wynajęcia.
+						Witamy na naszej stronie internetowej. Mamy do zaoferowania kwatery
+						pracownicze do wynajęcia.
 					</p>
 					<p style={{ textAlign: "center" }}>
 						Życzymy miłego przeglądania i zapraszamy do kontaktu.

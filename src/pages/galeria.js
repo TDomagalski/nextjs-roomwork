@@ -6,14 +6,10 @@ export default function Galeria() {
 			<div className={styles.page_gallery}>
 				<h1>Galeria</h1>
 				<p>
-					Z przyjemnością przedstawiamy Państwu zdjęcia wszystkich kwater,
-					wspólnych pomieszczeń, dwóch kuchni, patio jak i również budynku z
-					zewnątrz.
+					Poniżej prezentują się zdjęcia wszystkich kwater, wspólnych
+					pomieszczeń, dwóch kuchni, patio jak i również budynku z zewnątrz.
 				</p>
-				<p>
-					Serdecznie zapraszamy do przeglądania zdjęć, oraz kontaktu
-					zainteresowane osoby.
-				</p>
+				<p>Miłego oglądania.</p>
 				{/* <ImageGallery items={galleryImgs} /> */}
 			</div>
 		</main>

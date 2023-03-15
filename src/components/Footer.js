@@ -16,7 +16,7 @@ export default function Footer() {
 						<p className={styles.info_company}>
 							Family Party non-profit Sp. z o.o.
 						</p>
-						<p className={styles.info_adress}>ul. Krakowska 62D</p>
+						<p className={styles.info_adress}>ul. Krakowska 62d</p>
 						<p className={styles.info_city}>32-090 Słomniki</p>
 						<p className={styles.info_nip}>NIP: 682-177-77-38</p>
 						<p className={styles.info_regon}>REGON: 381101585</p>

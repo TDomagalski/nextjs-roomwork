@@ -1,0 +1,15 @@
+@import '../variables';
+
+.main {
+  width: 100%;
+  background-color: $color-harbor-light;
+  text-align: justify;
+  padding: 4rem 2rem;
+}
+
+@media (min-width: 920px) {
+  .main {
+    padding: 6rem 10rem;
+    font-size: 1.5rem;
+  }
+}

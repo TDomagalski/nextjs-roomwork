@@ -13,7 +13,7 @@ export default function Navbar() {
 
 				<nav>
 					<Link href="/">Home</Link>
-					<Link href="/kwatery">Kwatery</Link>
+					<Link href="/kwatery-pracownicze">Kwatery</Link>
 					<Link href="/galeria">Galeria</Link>
 					<Link href="/kontakt">Kontakt</Link>
 				</nav>

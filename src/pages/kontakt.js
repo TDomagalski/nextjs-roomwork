@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import ContactForm from "@/components/ContactForm";
+
 import styles from "@/styles/pages/Kontakt.module.scss";
 
 export default function Kontakt() {
@@ -29,7 +31,7 @@ export default function Kontakt() {
 				</div>
 				<div className={styles.page_Contact_form}>
 					<h2>Czekamy na wiadomość</h2>
-					{/* <ContactForm /> */}
+					<ContactForm />
 				</div>
 			</div>
 		</main>

@@ -1,24 +1,7 @@
-import styles from "../styles/pages/Galeria.module.scss";
-
-import Gallery from "react-photo-gallery";
-
-// const photos = [
-// 	{
-// 		src: "https://picsum.photos/200/300",
-// 		width: 4,
-// 		height: 3,
-// 	},
-// 	{
-// 		src: "https://picsum.photos/id/237/200/300",
-// 		width: 1,
-// 		height: 1,
-// 	},
-// ];
-
-const galleryImgs = [
+export const galleryImgs = [
 	// ~~ front img
 	{
-		src: "./gallery/ContactRow.webp",
+		src: "./gallery/ContactRow_img.webp",
 		width: 4,
 		height: 3,
 	},
@@ -139,21 +122,3 @@ const galleryImgs = [
 		height: 3,
 	},
 ];
-
-export default function Galeria() {
-	return (
-		<main className={styles.main}>
-			<div className={styles.page_gallery}>
-				<h1>Galeria</h1>
-				<p>
-					Poniżej prezentują się zdjęcia wszystkich kwater, wspólnych
-					pomieszczeń, dwóch kuchni, patio jak i również budynku z zewnątrz.
-				</p>
-				<p>Miłego oglądania.</p>
-				<div className={styles.img_container}>
-					<Gallery photos={galleryImgs} />
-				</div>
-			</div>
-		</main>
-	);
-}

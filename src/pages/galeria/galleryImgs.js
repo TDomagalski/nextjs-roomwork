@@ -26,11 +26,6 @@ export const galleryImgs = [
 		width: 4,
 		height: 3,
 	},
-	{
-		src: "./gallery/RoomWork-kuchnia1.webp",
-		width: 4,
-		height: 3,
-	},
 	// piętro1
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium1/Pokój1-kwatera_pracownicza-img1.webp",

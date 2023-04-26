@@ -5,11 +5,288 @@
   background-color: $color-harbor-light;
   text-align: justify;
   padding: 4rem 2rem;
+
+  &.page_offer {
+    .offer_nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+
+      .choose_room {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        img {
+          width: 10%;
+        }
+
+        h4 {
+          margin: 0 1rem;
+        }
+      }
+
+      a {
+        flex-basis: 40%;
+        text-decoration: none;
+        text-align: center;
+        color: $color-font-fullDark;
+        border: 2px solid $color-border-dark;
+        box-shadow: 0px 0px 8px 4px rgb(66 68 90);
+        border-radius: 1rem;
+        padding: 1.2rem;
+        box-sizing: border-box;
+
+        &.active {
+          background-color: $color-harbor-darkBlue;
+          box-shadow: inset 0px 0px 9px 3px rgba(66, 68, 90, 1);
+        }
+
+        svg {
+          width: 80%;
+        }
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .page_outlet {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        padding-top: 6rem;
+        font-size: 1.5rem;
+      }
+
+      .offer_nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+          flex-basis: 15%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: .6rem;
+
+          svg {
+            width: 100%;
+          }
+
+          span {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-top: 5px;
+
+            &.span-desktop {
+              display: none;
+            }
+          }
+        }
+      }
+      
+      .page_outlet {
+        width: 100%;
+
+        h3 {
+          font-size: 1.4rem;
+          text-align: left;
+        }
+
+        .room_equipment {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          flex-wrap: wrap;
+
+          .room_equipment-boxs {
+            flex-basis: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+            border: 2px solid $color-border-dark;
+            padding: 1rem;
+            svg {
+              width: 30px;
+              height: auto;
+              margin-bottom: 10px;
+            }
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+
+        .room_equipment-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-top: 2rem;
+
+          h3 {
+            font-size: 1.2rem;
+            padding-top: 0;
+          }
+
+          .room_equipment-boxs {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 8px 0;
+
+            svg {
+              width: 2rem;
+              height: auto;
+              margin: 0 10px 0 0;
+            }
+
+            span {
+              font-size: 0.75rem;
+              font-weight: 700;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 920px) {
   .main {
     padding: 6rem 10rem;
     font-size: 1.5rem;
+
+    &.page_offer {
+      // h1 {}
+      // p {}
+
+        .offer_nav {
+          justify-content: space-around;
+
+          .choose_room {
+            margin-bottom: 2rem;
+            svg {
+              width: 3rem;
+            }
+            h4 {
+              margin: 0 2rem;
+            }
+          }
+
+          a {
+            flex-basis: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            &.active {
+              box-shadow: inset 0px 0px 14px 6px rgba(66, 68, 90, 1);
+            }
+            svg {
+              width: 30%;
+            }
+            span {
+              font-size: 1.8rem;
+              font-weight: 700;
+            }
+          }
+        }
+        .page_outlet {
+          width: 75%;
+
+          h3 {
+            font-size: 2rem;
+          }
+
+          .offer_nav {
+            a {
+              padding: 1rem;
+              svg {
+                width: 50%;
+              }
+
+              span {
+                font-size: 1.5rem;
+
+                &.span-mobile {
+                  display: none;
+                }
+
+                &.span-desktop {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          .page_outlet {
+
+            h3 {
+              font-size: 1.8rem;
+            }
+
+            .room_equipment {
+              .room_equipment-boxs {
+                flex-basis: 10%;
+
+                svg {
+                  width: 4rem;
+                }
+                span {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+
+            .room_equipment-info {
+              padding: 0 4rem;
+
+              h3 {
+                font-size: 1.5rem;
+              }
+
+              .room_equipment-boxs {
+                &:nth-of-type(even) {
+                  align-self: flex-end;
+                  flex-direction: row-reverse;
+
+                  svg {
+                    margin: 0 0 0 10px;
+                  }
+                }
+                svg {
+                  width: 2.5rem;
+                }
+                span {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .carousel {
+          height: 320px;
+          width: 50%;
+        }
+      }
   }
 }

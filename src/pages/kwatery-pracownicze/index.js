@@ -1,3 +1,8 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import KwateryParter from "./kwatery-na-parterze/index";
+
 import styles from "../../styles/pages/Kwatery.module.scss";
 
 export default function KwateryPracownicze() {
@@ -21,25 +26,37 @@ export default function KwateryPracownicze() {
 					możliwość grillowania, jak i odpoczynku na świeżym powietrzu.
 				</p>
 
-				{/* <div className="offer_nav">
-          <div className="choose_room">
-            <ArrowDownIcon />
-            <h4>Wybierz piętro</h4>
-            <ArrowDownIcon />
-          </div>
-          <NavLink to="/kwatery/kwatery-parter" onClick={handleClickScroll}>
-            <ApartStandardIcon />
-            <span>Kwatery parter</span>
-          </NavLink>
-          <NavLink to="/kwatery/kwatery-pietro" onClick={handleClickScroll}>
-            <ApartPremiumIcon />
-            <span>Kwatery piętro</span>
-          </NavLink>
-        </div> */}
+				<div className={styles.offer_nav}>
+					<div className={styles.choose_room}>
+						<Image
+							src="/arrow-down_icon.svg"
+							alt="Arrow down VV"
+							width={35}
+							height={35}
+							priority
+						/>
+						<h4>Wybierz piętro</h4>
+						<Image
+							src="/arrow-down_icon.svg"
+							alt="Arrow down VV"
+							width={35}
+							height={35}
+							priority
+						/>
+					</div>
+					<Link href="/kwatery-pracownicze/kwatery-na-pietrze">
+						{/* <ApartStandardIcon /> */}
+						<span>Kwatery parter</span>
+					</Link>
+					<Link href="/kwatery-pracownicze/kwatery-na-parterze">
+						{/* <ApartPremiumIcon /> */}
+						<span>Kwatery piętro</span>
+					</Link>
+				</div>
 
-				{/* <div id="outlet">
-          <Outlet />
-        </div> */}
+				<div id="outlet">
+					<KwateryParter />
+				</div>
 			</div>
 		</main>
 	);

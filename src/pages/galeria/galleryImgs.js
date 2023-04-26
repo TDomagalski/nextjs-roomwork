@@ -2,40 +2,40 @@ export const galleryImgs = [
 	// ~~ front img
 	{
 		src: "./gallery/ContactRow_img.webp",
-		width: 4,
+		width: 5,
 		height: 3,
 	},
 	// Stairs / hall and kitchen
 	{
 		src: "./gallery/RoomWork-klatka_schodowa-img1.webp",
-		width: 1,
-		height: 1,
+		width: 2,
+		height: 2,
 	},
 	{
 		src: "./gallery/RoomWork-korytarz-img1.webp",
-		width: 4,
-		height: 3,
+		width: 3,
+		height: 2,
 	},
 	{
 		src: "./gallery/RoomWork-korytarz-img2.webp",
-		width: 4,
-		height: 3,
+		width: 2,
+		height: 2,
 	},
 	{
 		src: "./gallery/RoomWork-korytarz-img3.webp",
-		width: 4,
-		height: 3,
+		width: 2,
+		height: 2,
 	},
 	// piętro1
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium1/Pokój1-kwatera_pracownicza-img1.webp",
 		width: 4,
-		height: 3,
+		height: 2,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium1/Pokój1-kwatera_pracownicza-img2.webp",
-		width: 1,
-		height: 1,
+		width: 4,
+		height: 2,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium1/Pokój1-kwatera_pracownicza-img3.webp",
@@ -50,24 +50,24 @@ export const galleryImgs = [
 	// piętro2
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium2/Pokój2-kwatera_pracownicza-img1.webp",
-		width: 4,
-		height: 3,
+		width: 3,
+		height: 2,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium2/Pokój2-kwatera_pracownicza-img2.webp",
-		width: 1,
-		height: 1,
+		width: 3,
+		height: 2,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium2/Pokój2-kwatera_pracownicza-img3.webp",
-		width: 4,
-		height: 3,
+		width: 2,
+		height: 2,
 	},
 	// piętro3
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium3/Pokój3-kwatera_pracownicza-img1.webp",
-		width: 1,
-		height: 1,
+		width: 4,
+		height: 3,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium3/Pokój3-kwatera_pracownicza-img2.webp",
@@ -76,13 +76,13 @@ export const galleryImgs = [
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium3/Pokój3-kwatera_pracownicza-img3.webp",
-		width: 1,
-		height: 1,
+		width: 3,
+		height: 3,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium3/Pokój3-kwatera_pracownicza-img4.webp",
-		width: 1,
-		height: 1,
+		width: 4,
+		height: 3,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium3/Pokój3-kwatera_pracownicza-img5.webp",
@@ -97,12 +97,12 @@ export const galleryImgs = [
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium4/Pokój4-kwatera_pracownicza-img2.webp",
-		width: 4,
-		height: 3,
+		width: 3,
+		height: 2,
 	},
 	{
 		src: "./gallery/kwatery/kwatery-premium/premium4/Pokój4-kwatera_pracownicza-img3.webp",
-		width: 1,
+		width: 2,
 		height: 1,
 	},
 	{

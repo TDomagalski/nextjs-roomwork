@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 
-import styles from "../styles/pages/Kontakt.module.scss";
+import styles from '../styles/pages/Kontakt.module.scss';
 
 export default function ContactForm() {
-	const key = "6LfxkdgkAAAAAEdSFSs_MkkFxDXkyI8xWobcRUun";
+	const key = '6LfxkdgkAAAAAEdSFSs_MkkFxDXkyI8xWobcRUun';
 
 	const handleOnChange = (value) => {
-		console.log("Captcha value:", value);
+		console.log('Captcha value:', value);
 	};
 
 	const form = useRef();
@@ -18,10 +18,10 @@ export default function ContactForm() {
 
 		emailjs
 			.sendForm(
-				"service_l7t9zgr",
-				"template_g54cqd5",
+				'service_l7t9zgr',
+				'template_g54cqd5',
 				form.current,
-				"jQ43-rxA6hvEwUE-l"
+				'jQ43-rxA6hvEwUE-l'
 			)
 			.then(
 				(result) => {

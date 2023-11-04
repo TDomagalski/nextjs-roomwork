@@ -4,13 +4,13 @@ import ContactRow from "./ContactRow";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
-	return (
-		<>
-			<Infobar />
-			<Navbar />
-			<div>{children}</div>
-			<ContactRow />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <Infobar />
+      <Navbar />
+      <div>{children}</div>
+      <ContactRow />
+      <Footer />
+    </>
+  );
 }
